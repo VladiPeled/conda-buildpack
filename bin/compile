@@ -55,7 +55,9 @@ export LANG=en_US.UTF-8
 cd $BUILD_DIR
 
 # Experimental pre_compile hook.
+echo "Entering hooks pre-comple"
 source $BIN_DIR/steps/hooks/pre_compile
+echo "Exiting hooks pre-comple"
 
 # ### The Cache
 mkdir -p $CACHE_DIR
